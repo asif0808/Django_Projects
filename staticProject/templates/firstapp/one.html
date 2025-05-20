@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" href="{% static 'css/one.css'%}">
+  <style media="screen">
+    h1{
+      color: yellow;
+    }
+    h2{
+      color: green;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Hello There, Welcome</h1>
+    <h2>And Very {{greet}}</h2>
+    <img src="{%static 'images/class.jpg'%}" alt="">
+  </body>
+</html>

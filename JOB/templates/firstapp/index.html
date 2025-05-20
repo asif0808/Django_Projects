@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome To The Job</h1>
+        <p>Job updates For you....</p>
+        <a class="btn btn-primary btn-lg" href="{%url 'hyd'%}">Hyderabad Jobs</a>&nbsp;
+        <a class="btn btn-primary btn-lg" href="{%url 'pune'%}">Pune Jobs</a>&nbsp;
+        <a class="btn btn-primary btn-lg" href="{%url 'bang'%}">Banglore Jobs</a>
+      </div>
+    </div>
+  </body>
+</html>

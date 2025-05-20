@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  </head>
+  <body>
+  <div class="container" align="center">
+    {% if submitted %}
+        <h1>Student with name {{sname}} processed successfully</h1>
+        <h2>Enter next Student information </h2>
+    {% else %}
+    <h1>Student Input Form</h1>
+    {% endif %}
+    <form  method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" name="" value="Submit">
+    </form>
+
+  </div>
+  </body>
+</html>

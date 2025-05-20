@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hello {{name}}, Enter Course Name</h1>
+    <form  action="/result" method="">
+      {{form.as_p}}
+      {%csrf_token%}
+      <input type="submit" name="" value="submit">
+    </form>
+  </body>
+</html>

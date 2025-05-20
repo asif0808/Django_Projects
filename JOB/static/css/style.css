@@ -1,0 +1,14 @@
+.container{
+  text-align: center;
+  margin-top: 100px
+
+}
+.jumbotron{
+  background: yellow
+}
+.container h1{
+  color: green;
+}
+.special{
+  color: blue;
+}

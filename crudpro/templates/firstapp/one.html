@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Student information</h1>
+    <table border="3">
+      <thead>
+        <th>roll_no</th>
+        <th>Name</th>
+      </thead>
+    {%for data in mydict %}
+        <tr>
+          <!-- <td>{{data.id}}</td> -->
+          <td>{{data.roll_no}}</td>
+          <td>{{data.name}}</td>
+        </tr>
+        {% endfor%}
+  </body>
+</html>

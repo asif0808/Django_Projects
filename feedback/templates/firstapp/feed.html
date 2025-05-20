@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  </head>
+  <body>
+    {% if submitted %}
+    <h1 style="color:blue">Hello {{sname}} , Thank you for your feedback</h1>
+    <a class="btn btn-primary btn-lg" href="{{request.get_full_path}}">Back to main</a>
+    {% else %}
+        <div class="container" align=center>
+        <h1>Welcome</h1>
+        <form  method="post" class="feedform">
+          <h1>Student Feedback Form</h1>
+          {{feed.as_p}}
+          {% csrf_token %}
+          <input style="color: black" type="submit" name="sub" value="Submit">
+        </form>
+      </div>
+  {% endif%}
+  </body>
+</html>
